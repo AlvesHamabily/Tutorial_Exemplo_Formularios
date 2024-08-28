@@ -2,53 +2,100 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
 :root {
-    
-    --primary-color: #3301FA;
-    --second-color: #fff;
-    --third-color: #4523CF;
-    
+    --primary-color: #274156;;
+    --second-color: #FBfcff;
 }
-.main{
-    align-items: center;
-    margin: 10px;
-}
+
 .topo {
+    width: 100%;
     padding: 15px;
-    background-color:#274156;
+    background-color:var(--primary-color);
 }
 .topo h1{
-    color: #FBfcff;
+    color:var(--second-color);
     text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .formulario{
     margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: ;
+
 }
 .formulario input[type=text], .formulario textarea, .formulario select{
     width: 100%;
     padding: 10px;
-    border: 1px solid #274156;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     outline: none;
+    margin-bottom: 10px;
 }
+
 .formulario input[type=radio] {
     margin-right: 5px;
 }
 
+input, select{
+    border-radius: 4px;
+}
 .button {
     width: 100%;
-    background-color: #274156;
+    background-color: var(--primary-color);
     border: none;
+    border-radius: 5px;
     padding: 15px;
     cursor: pointer;
-    color: #FBfcff;
-    font-size: 14px;
+    color: var(--second-color);
+    font-size: 16px;
+    text-align: center;
 }
 
 .button:hover {
     opacity: 0.8;
+}
+
+
+a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+fieldset {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--second-color);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    padding: 16px;
+    width: 100%;
+
+}
+
+footer p{  
+    position: relative;
+    width: 100%;
+    text-align:center;
 }
