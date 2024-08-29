@@ -6,10 +6,6 @@ body {
 }
 
 :root {
-<<<<<<< HEAD
-    --primary-color: #274156;;
-    --second-color: #FBfcff;
-=======
     
     --primary-color: #274156;;
     --second-color: #FBfcff;
@@ -18,7 +14,6 @@ body {
 .main{
     align-items: center;
     margin: 10px;
->>>>>>> dd86c1ec85b52684e9036092e30e896138314b72
 }
 
 .topo {
@@ -72,12 +67,8 @@ input, select{
     padding: 15px;
     cursor: pointer;
     color: var(--second-color);
-<<<<<<< HEAD
     font-size: 16px;
     text-align: center;
-=======
-    font-size: 14px;
->>>>>>> dd86c1ec85b52684e9036092e30e896138314b72
 }
 
 .button:hover {
